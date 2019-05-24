@@ -36,7 +36,8 @@ main{
   
 }
 nav, footer{
-  background-color: greenyellow;
+  background-color: rgba(173, 255, 47,0.9);
+  
 }
 
 nav{
@@ -47,7 +48,7 @@ nav{
   top: 0;
   left: 0;
   right: 0;
-  padding: 0.5% 0;
+  padding:  0;
   
 }
 nav > h2{
@@ -86,6 +87,10 @@ section{
   padding: 5% 0;
 }
 
+.project p{
+  padding: 0;
+  margin: 0;
+}
 
 .notYet{
   display: none;
@@ -111,6 +116,9 @@ footer{
   }
   .about p{
     font-size: 24px;
+  }
+  .project p{
+    font-size: 20px;
   }
   section{
     min-width: 100%;
