@@ -103,6 +103,14 @@ footer{
   }
   header{
     width: 100%;
+    text-align: center;
+  }
+
+  body{
+    font-size: 28px;
+  }
+  .about p{
+    font-size: 24px;
   }
   section{
     min-width: 100%;
