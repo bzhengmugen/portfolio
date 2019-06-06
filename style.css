@@ -9,28 +9,29 @@ html{
 body{
   font-family: "Roboto", sans-serif;
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   width: 100%;
-  line-height: 1.5;
+  line-height: 1.7;
   margin: 0;
   padding: 0;
 }
 .about p{
-  font-size: 24px;
+  font-size: 16px;
   
 }
 
 header{
   padding-top: 7%;
   padding-bottom: 0;
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-left: 16%;
+  padding-right: 16%;
   min-height: 200px;
   text-align: left;
 }
 
 .pic{
-  float:left;
+  position: relative;
+  text-align: center;
 }
 
 main{
@@ -53,7 +54,7 @@ nav{
   left: 0;
   right: 0;
   padding:  0;
-  
+  z-index: 2;
 }
 nav > h2{
   padding-left: 50px;
@@ -68,8 +69,14 @@ nav > .icon{
   color: white;
 }
 
+a:link {
+  text-decoration: none;
+  
+}
 
-
+a:hover{
+  text-decoration: underline;
+}
 
 nav > a:hover{
   background-color:#ddd;
@@ -92,7 +99,8 @@ section{
 }
 
 .project p{
-  padding: 0;
+  text-align: center;
+
   margin: 0;
 }
 
@@ -104,7 +112,8 @@ footer{
   padding: 1% 0;
 }
 
-@media screen and (min-width: 1000px){
+
+@media screen and (min-width: 600px){
   main{
     flex-direction: row;
     width: 100%;
@@ -112,23 +121,22 @@ footer{
   }
   header{
     width: 100%;
-    text-align: center;
+    text-align: left;
   }
 
   
   .about p{
-    font-size: 32px;
+    font-size: 28px;
   }
   .project p{
     font-size: 20px;
   }
   section{
-    min-width: 100%;
+    min-width: 50%;
 
   }
   nav > .icon{
   display: none;
-  
   }
   nav > #menu{
     display: flex;
@@ -137,5 +145,18 @@ footer{
   #menu > li{
     display: inline-block;
     margin-right: 40px;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .about p{
+    font-size: 34px;
+  }
+  .project p{
+    font-size: 20px;
+  }
+    section{
+    min-width: 100%;
+
   }
 }
